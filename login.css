@@ -1,0 +1,323 @@
+
+/* ===============================
+   Google Font
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===============================
+   Reset
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600");
+
+    background-size:cover;
+    background-position:center;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+
+}
+
+/* ===============================
+   Main Container
+================================ */
+
+.container{
+
+    width:100%;
+    max-width:1000px;
+
+    background:#1b1b1b;
+
+    display:flex;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.6);
+
+}
+
+/* ===============================
+   Left Section
+================================ */
+
+.left{
+
+    width:40%;
+
+    background:#e63946;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+.logo{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.left h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.left h3{
+
+    font-weight:400;
+
+    margin-bottom:20px;
+
+}
+
+.left p{
+
+    line-height:28px;
+
+}
+
+/* ===============================
+   Right Section
+================================ */
+
+.right{
+
+    width:60%;
+
+    padding:50px;
+
+}
+
+.right h2{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+/* ===============================
+   Input Box
+================================ */
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:20px;
+
+}
+
+.input-box i{
+
+    position:absolute;
+
+    top:50%;
+
+    left:15px;
+
+    transform:translateY(-50%);
+
+    color:#e63946;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px 15px 15px 45px;
+
+    background:#2d2d2d;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:8px;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.input-box input::placeholder{
+
+    color:#bdbdbd;
+
+}
+
+/* ===============================
+   Button
+================================ */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#e63946;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#ff4d5d;
+
+    transform:scale(1.02);
+
+}
+
+/* ===============================
+   Register Link
+================================ */
+
+.register{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.register a{
+
+    color:#e63946;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.register a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===============================
+   Responsive
+================================ */
+
+@media(max-width:900px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.left,
+.right{
+
+    width:100%;
+
+}
+
+.left{
+
+    padding:40px;
+
+}
+
+.right{
+
+    padding:35px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.left h1{
+
+    font-size:32px;
+
+}
+
+.left h3{
+
+    font-size:20px;
+
+}
+
+.logo{
+
+    font-size:55px;
+
+}
+
+.right{
+
+    padding:25px;
+
+}
+
+.right h2{
+
+    font-size:28px;
+
+}
+
+button{
+
+    font-size:16px;
+
+}
+
+}
